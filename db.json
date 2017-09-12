@@ -1,0 +1,149 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "coverphoto": "http://www.menshealth.com/sites/menshealth.com/files/coffee-mug.jpg",
+      "name": "Coffee"
+    },
+    {
+      "id": 2,
+      "coverphoto": "https://www.decathlon.co.uk/ecuk/static/wedze/assets/img/camping/camping-background.jpg",
+      "name": "Camping"
+    },
+    {
+      "id": 3,
+      "coverphoto": "https://cdn.trendhunterstatic.com/thumbs/nature-tattoos.jpeg",
+      "name": "Tattoos"
+    },
+    {
+      "id": 4,
+      "coverphoto": "https://i.ytimg.com/vi/HpiE45VVlf8/hqdefault.jpg",
+      "name": "Doggos"
+    },
+    {
+      "id": 5,
+      "coverphoto": "http://lifebefore30.com/wp-content/uploads/2017/05/travel-1.jpg",
+      "name": "Travel"
+    },
+    {
+      "id": 6,
+      "coverphoto": "https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg",
+      "name": "Nature"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "name": "Coffee",
+      "url": "https://i.pinimg.com/736x/c5/80/3e/c5803efb12da082a19f80b4b84dfd5c6--espresso-photography-coffee-time-photography.jpg",
+      "albumId": 1
+    },
+    {
+      "id": 2,
+      "name": "Still Coffee",
+      "url": "https://s8.favim.com/orig/151227/art-coffee-photography-Favim.com-3811668.jpg",
+      "albumId": 1
+    },
+    {
+      "id": 3,
+      "name": "More Coffee",
+      "url": "https://i.pinimg.com/736x/93/de/fa/93defa6ee059f216bac3f2b67887d24e--coffee-art-photography-bakery-photography.jpg",
+      "albumId": 1
+    },
+ 
+    {
+      "id": 7,
+      "name": "Camping",
+      "url": "https://cbsnews3.cbsistatic.com/hub/i/r/2017/02/02/2b766abd-de4a-4a2e-9a9b-877e3729cccb/thumbnail/620x350/ca132eeb2e04d9d15d3b8029e7dc76da/istock-513059696.jpg",
+      "albumId": 2
+    },
+    {
+      "id": 8,
+      "name": "Still Camping",
+      "url": "http://images.huffingtonpost.com/2015-03-19-1426803829-9735139-8f524af8ef2b50a4dab24786229c28c11.jpg",
+      "albumId": 2
+    },
+    {
+      "id": 9,
+      "name": "More Camping",
+      "url": "https://media.mnn.com/assets/images/2016/05/tree-camping-bavaria.jpg.838x0_q80.jpg",
+      "albumId": 2
+    },
+
+    {
+      "id": 13,
+      "name": "Tattoos",
+      "url": "http://nextluxury.com/wp-content/uploads/forearm-black-ink-minimalistic-camping-tattoos-men.jpg",
+      "albumId": 3
+    },
+    {
+      "id": 14,
+      "name": "Still Tattoos",
+      "url": "https://i.pinimg.com/736x/5a/6c/ab/5a6cab3f7136c4695add7bca58ab36da--nature-tattoos-sleeve-tattoos-pics.jpg",
+      "albumId": 3
+    },
+    {
+      "id": 15,
+      "name": "More Tattoos",
+      "url": "https://i.pinimg.com/736x/cc/71/a5/cc71a53296228fa554326fb290d4bb04--nature-inspired-semicolon-tattoo.jpg",
+      "albumId": 3
+    },
+
+    {
+      "id": 19,
+      "name": "Good Boy",
+      "url": "https://i.imgur.com/RjXZTgw.jpg",
+      "albumId": 4
+    },
+    {
+      "id": 20,
+      "name": "Apple Boy",
+      "url": "https://az616578.vo.msecnd.net/files/2016/08/22/6360750671681651291985063401_2f48cf84fdd0ef751a79d8e22e8b4db229878f8bfd5fb415421e5d2ba7b093f5_1.jpg",
+      "albumId": 4
+    },
+    {
+      "id": 21,
+      "name": "Sleepy Boy",
+      "url": "https://16347-presscdn-0-0-pagely.netdna-ssl.com/wp-content/uploads/2017/06/Beth-Tudor.png",
+      "albumId": 4
+    },
+
+    {
+      "id": 25,
+      "name": "Travel",
+      "url": "https://parade.com/wp-content/uploads/2017/03/marilyn-travels-advice-ask-marilyn-ftr.jpg",
+      "albumId": 5
+    },
+    {
+      "id": 26,
+      "name": "Still Travel",
+      "url": "https://www.travelex.com/media/2573/16083767_ml.jpg",
+      "albumId": 5
+    },
+    {
+      "id": 27,
+      "name": "More Travel",
+      "url": "http://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/01/20/Pictures/travel-preparations-on-wooden-table_4dd75450-df14-11e6-a538-54bd197a5a1b.jpg",
+      "albumId": 5
+    },
+
+    {
+      "id": 31,
+      "name": "Nature",
+      "url": "https://www.nature.org/cs/groups/webcontent/@photopublic/documents/media/nick-hall-sichuan-province-537.jpg",
+      "albumId": 6
+    },
+    {
+      "id": 32,
+      "name": "More Nature",
+      "url": "https://i.ytimg.com/vi/x30YOmfeVTE/maxresdefault.jpg",
+      "albumId": 6
+    },
+    {
+      "id": 33,
+      "name": "Still Nature",
+      "url": "https://mindbodygreen-res.cloudinary.com/images/c_scale,w_770,q_80,f_auto,fl_lossy/crp/stocksy_txp2ab003e8qst100_small_1359272-828x492/doctor-explains-advantage-healing-powers-nature.jpg",
+      "albumId": 6
+    }
+  ]
+}
