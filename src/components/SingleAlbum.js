@@ -1,20 +1,44 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
+import {getPhotos} from '../actions/photoActs'
+
 
 class SingleAlbum extends Component {
+	static defaultProps={
+		photos:[],
+		albums:[]
+	}
+
+	componentWillMount(){
+		getPhotos()
+	}
 	render () {
+		console.log('name',this.props.photos)
 		return (
-			<div className='singleNav'>
-			<h1>SingleAlbum</h1>
-		{/*Links*/}
-			<h3>Album 1</h3>
-			<h3>Album 2</h3>
-			<h3>Album 3</h3>
-			<h3>Album 4</h3>
-			<h3>Album 5</h3>
-			<h3>Album 6</h3>
+			<div>
+			<div className='header'>
+				<h1>Single Album {this.props.match.params.id}</h1>
+			</div>
+			<div>
+				<div className='photos'>
+					{this.props.photos.map(data => (
+						<div key={data.id}>
+							<img src={data.url} alt=''/>
+							<div>{data.name}</div>
+						</div>
+					))}
+				</div>
+			</div>
 			</div>
 		)
 	}
 }
 
-export default SingleAlbum
+function stateToProps(appState,compProps){
+	return {
+		albums: appState.albums,
+		photos: appState.photos.filter(i => compProps.match.params.id == i.albumId)
+	}
+}
+
+export default connect(stateToProps)(SingleAlbum)

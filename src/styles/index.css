@@ -2,4 +2,25 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  width:1000px;
+}
+img {
+	width:200px;
+	height:200px;
+	padding:20px;
+}
+.albumWrap{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+p {
+	text-align: center;
+}
+.contain {
+	width:900px;
+	margin: auto;
+}
+.photos {
+	display: flex;
 }

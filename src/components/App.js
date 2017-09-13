@@ -15,7 +15,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path='/' component={AlbumsAll}/>
-            <Route path='./SingleAlbum/:id' component={SingleAlbum}/>
+            <Route path='/SingleAlbum/:id' component={SingleAlbum}/>
             <Route path='/Photo/:id' component={Photo}/>
           </Switch>
         </Router>
