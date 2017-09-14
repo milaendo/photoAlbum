@@ -1,8 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
+
   font-family: sans-serif;
-  width:1000px;
+  
 }
 img {
 	width:200px;
@@ -12,15 +11,42 @@ img {
 .albumWrap{
 	display: flex;
 	flex-wrap: wrap;
+	width:900px;
+	margin:auto;
 
+}
+.albumNav{
+	text-align: center;
+}
+.albumIndi{
+	margin: auto;
 }
 p {
 	text-align: center;
 }
-.contain {
-	width:900px;
-	margin: auto;
-}
+
 .photos {
 	display: flex;
+	text-align: center;
+	width:1000px;
+}
+.nav {
+	width:1000px;
+	display: flex;
+	justify-content: space-between;
+}
+.mainContain{
+	margin:auto;
+	width:1000px;
+}
+.fullWrap{
+	width:1000px;
+	margin:auto;
+	
+}
+.header{
+	text-align: center;
+}
+.photoIndi{
+	margin: auto;
 }

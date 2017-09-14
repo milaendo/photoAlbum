@@ -15,16 +15,14 @@ class AlbumsAll extends Component {
 			<div className='albumNav'>
 				<h1>My Albums</h1>
 			</div>
-			<div className='contain'>
 				<div className='albumWrap'>	
 					{this.props.albums.map(data => (
-						<div key={data.id}>
+						<div key={data.id} className='albumIndi'>
 							<Link to={'/SingleAlbum/' + data.id}><img src={data.coverphoto} alt='' /></Link>
 							<p>{data.name}</p>
 						</div>
 					))}
 				</div>
-			</div>
 			</div>
 		)
 	}

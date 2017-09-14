@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {getPhotos} from '../actions/photoActs'
+import {Link} from 'react-router-dom'
 
 
 class SingleAlbum extends Component {
@@ -13,21 +14,28 @@ class SingleAlbum extends Component {
 		getPhotos()
 	}
 	render () {
-		console.log('name',this.props.photos)
 		return (
-			<div>
-			<div className='header'>
-				<h1>Single Album {this.props.match.params.id}</h1>
+			<div className='fullWrap'>
+			<div className='nav'>
+			{this.props.albums.map(items => (
+				<Link to={/SingleAlbum/ + items.id} key={items.id}><div className='navLink'>{items.name}</div></Link>
+			
+			))}
 			</div>
-			<div>
-				<div className='photos'>
-					{this.props.photos.map(data => (
-						<div key={data.id}>
-							<img src={data.url} alt=''/>
-							<div>{data.name}</div>
-						</div>
-					))}
+			<div className='mainContain'>
+			<div className='header'>
+					<h1>Single Album {this.props.match.params.id}</h1>
+			</div>
+				<div>
+					<div className='photos'>
+						{this.props.photos.map(data => (
+								<div key={data.id} className="photoIndi">
+									<Link to ={/Photo/ + data.id}><img src={data.url} alt=''/></Link>
+									<div>{data.name}</div>
+					</div>
+						))}
 				</div>
+			</div>
 			</div>
 			</div>
 		)
