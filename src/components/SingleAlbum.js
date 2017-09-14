@@ -30,7 +30,7 @@ class SingleAlbum extends Component {
 					<div className='photos'>
 						{this.props.photos.map(data => (
 								<div key={data.id} className="photoIndi">
-									<Link to ={/Photo/ + data.id}><img src={data.url} alt=''/></Link>
+									<Link to ={/Photo/ + data.id}><img src={data.url} alt='' id='singleAlbum'/></Link>
 									<div>{data.name}</div>
 					</div>
 						))}

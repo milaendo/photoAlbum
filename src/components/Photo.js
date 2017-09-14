@@ -11,10 +11,18 @@ class Photo extends Component {
 	}
 	render () {
 		return (
-			<div>{this.props.match.params.id}
+			<div className='main'>
+				<div className='header'>
 				<h1>Single Photo</h1>
-				{console.log('props',this.props)}
-				{console.log('diff')}
+				</div>
+				<div className='photoWrap'>					
+					{this.props.photos.map(item => (
+						<div key={item.id} className='single'>
+							<img id='singlePhoto'src={item.url} alt=''/>
+							<div>{item.name}</div>
+						</div>
+					))}
+				</div>
 			</div>
 		)
 	}
@@ -23,7 +31,7 @@ class Photo extends Component {
 function stateToProps(appState,compProps){
 	return {
 		albums: appState.albums,
-		photos: appState.photos.filter(i => compProps.match.params.id == i.albumId)
+		photos: appState.photos.filter(i => compProps.match.params.id == i.id)
 	}
 }
 

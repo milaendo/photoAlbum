@@ -4,15 +4,16 @@ body {
   
 }
 img {
-	width:200px;
-	height:200px;
+	width:250px;
+	height:250px;
 	padding:20px;
 }
 .albumWrap{
 	display: flex;
 	flex-wrap: wrap;
-	width:900px;
+	width:1000px;
 	margin:auto;
+	border:1px solid black;
 
 }
 .albumNav{
@@ -29,6 +30,7 @@ p {
 	display: flex;
 	text-align: center;
 	width:1000px;
+	
 }
 .nav {
 	width:1000px;
@@ -49,4 +51,17 @@ p {
 }
 .photoIndi{
 	margin: auto;
+}
+#singlePhoto{
+	width:600px;
+	height:600px;
+}
+#singleAlbum{
+	width:300px;
+	height:300px;
+}
+.photoWrap{
+	width:600px;
+	margin: auto;
+	text-align: center;
 }
