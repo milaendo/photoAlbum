@@ -1,6 +1,7 @@
 body {
 
   font-family: sans-serif;
+  background-color: #5F9EA0
   
 }
 img {
@@ -13,7 +14,8 @@ img {
 	flex-wrap: wrap;
 	width:1000px;
 	margin:auto;
-	border:1px solid black;
+	border:1px solid white;
+	border-radius: 3px;
 
 }
 .albumNav{
@@ -64,4 +66,15 @@ p {
 	width:600px;
 	margin: auto;
 	text-align: center;
+}
+img {
+	border-radius: 50%;
+}
+.secondWrap{
+	border:3px solid white;
+	border-radius: 3px;
+	padding:20px;
+}
+.white{
+	color: white;
 }

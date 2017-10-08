@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import getData from '../actions/photoActs'
 import {Link} from 'react-router-dom'
+import { Header } from 'semantic-ui-react'
 
 
 class AlbumsAll extends Component {
@@ -12,17 +13,19 @@ class AlbumsAll extends Component {
 	render () {
 		return (
 			<div className='mainContain'>
-			<div className='albumNav'>
-				<h1>My Albums</h1>
-			</div>
+			<Header as='h3' block className='white'>
+				All Albums
+			</Header>
+				<div className='secondWrap'>
 				<div className='albumWrap'>	
 					{this.props.albums.map(data => (
 						<div key={data.id} className='albumIndi'>
 							<Link to={'/SingleAlbum/' + data.id}><img src={data.coverphoto} alt='' /></Link>
-							<p>{data.name}</p>
+							<Header  className='white'>{data.name}</Header>
 						</div>
 					))}
 				</div>
+				</div> 
 			</div>
 		)
 	}
